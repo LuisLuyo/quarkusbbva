@@ -12,13 +12,13 @@ parameters:
     name: IMAGE_PROMETHEUS
     value: quay.io/prometheus/prometheus:v2.17.1
   - name: APPLICATION_NAME
-    value: prometheus-demo
+    value: prometheus-bbva
 
 objects:
   - apiVersion: v1          # Click on 'Copy to Editor' --->
     kind: ConfigMap
     metadata:
-      name: prometheus-demo
+      name: prometheus-bbva
       namespace: pad-monitoring
     data:
       prometheus.yml: |
